@@ -1,12 +1,12 @@
 import React from 'react';
 import { FiArrowRight } from 'react-icons/fi';
 import Logo from '../assets/Logo.webp'
-import { BOOK_CALL } from './constants';
+import { BOOK_CALL_LINK, BUTTONS, DUMMY_COMPANY_LABEL_FOR_APPLICATION } from './constants';
 
 const Header: React.FC = () => {
   const handleBookCall = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    window.open(BOOK_CALL, '_blank', 'noopener,noreferrer');
+    window.open(BOOK_CALL_LINK, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -16,7 +16,7 @@ const Header: React.FC = () => {
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <img src={Logo} alt="Greptile logo" className="w-6 h-6" />
-          <span className="text-gray-900 font-semibold text-lg">greptile on J</span>
+          <span className="text-gray-900 font-semibold text-lg">{DUMMY_COMPANY_LABEL_FOR_APPLICATION}</span>
         </div>
 
         {/* CTA Button */}
@@ -24,7 +24,7 @@ const Header: React.FC = () => {
           onClick={handleBookCall}
           className="ml-4 flex items-center space-x-1 bg-[#D1FADF] text-black font-semibold px-4 py-2 rounded-md border border-green-300 shadow-sm hover:bg-[#bff6c6] transition cursor-pointer"
         >
-          <span>Book a Call</span>
+          <span>{BUTTONS.BOOK_CALL}</span>
           <FiArrowRight className="text-md" />
         </button>
       </div>

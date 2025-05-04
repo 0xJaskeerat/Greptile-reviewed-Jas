@@ -1,5 +1,9 @@
 import React from "react";
-import { FiArrowRight } from "react-icons/fi";
+
+import HeroImage from "../assets/HeroImage.png";
+
+import ReviewButton from "./ReviewButton";
+
 import {
   NAME,
   GREPTILE_TWITTER_URL,
@@ -9,7 +13,6 @@ import {
   JOB_ROLE_LABEL,
   COMPANY_LABEL,
 } from "./constants";
-import HeroImage from "../assets/HeroImage.png";
 
 const Intro: React.FC = () => {
   return (
@@ -30,12 +33,7 @@ const Intro: React.FC = () => {
               @{COMPANY_LABEL}
             </a>
           </p>
-          <div className="flex justify-center lg:justify-start">
-            <button className="mt-6 flex items-center space-x-1 bg-[#D1FADF] text-black font-semibold px-4 py-2 rounded-md border border-green-300 shadow-sm hover:bg-[#bff6c6] transition cursor-pointer">
-              <span>Start Review</span>
-              <FiArrowRight className="text-md" />
-            </button>
-          </div>
+          <div className="flex justify-center lg:justify-start"><ReviewButton /></div>
         </div>
 
         {/* Right Content */}
