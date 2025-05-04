@@ -1,5 +1,7 @@
 import React from "react";
+
 import Logo from "../assets/Logo.webp";
+
 import { DUMMY_COMPANY_LABEL_FOR_APPLICATION, FOOTER_DATA, QUICK_LINKS } from "./constants";
 
 const Footer: React.FC = () => {

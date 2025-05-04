@@ -9,12 +9,16 @@ export const GREPTILE_TWITTER_URL = "https://x.com/greptileai";
 export const HERO_TEXT = "Greptile reviews";
 export const HERO_SUB_TEXT = "To ease the selection process for";
 
+export const MAIN_TEXT = 'Interested? Book a Call ↓'
+
 export const PORTFOLIO = "https://bento.me/0xjaskeerat";
 export const BOOK_CALL_LINK = "https://cal.com/jaskeerat-singh";
 
 export const BUTTONS = {
   START_REVIEW: "Start Review",
   BOOK_CALL: "Book a Call",
+  QUICK_CHAT: "Quick Call",
+  DISCUSSION: 'Discussion',
   CLOSE: 'Close'
 };
 
